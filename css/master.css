@@ -269,43 +269,43 @@ ul {
   left: 50%;
   transform: translateX(-50%);
 }
-.money .icon,
-.money .progress {
+.targets .money .icon,
+.targets .money .progress {
   background-color: rgb(0 117 255 / 20%);
 }
 .money .icon i {
   color: var(--blue-color);
 }
-.money .progress span {
+.targets .money .progress span {
   background-color: var(--blue-color);
 }
-.money .details .progress > span span::after {
+.targets .money .details .progress > span span::after {
   border-top-color: var(--blue-color);
 }
-.projects .icon,
-.projects .progress {
+.targets .project .icon,
+.targets .project .progress {
   background-color: rgb(245 159 11 / 20%);
 }
-.projects .icon i {
+.targets .project .icon i {
   color: var(--orange-color);
 }
-.projects .progress span {
+.targets .project .progress span {
   background-color: var(--orange-color);
 }
-.projects .details .progress > span span::after {
+.targets .project .details .progress > span span::after {
   border-top-color: var(--orange-color);
 }
-.team .icon,
-.team .progress {
+.targets .team .icon,
+.targets .team .progress {
   background-color: rgb(34 197 4 / 20%);
 }
-.team .icon i {
+.targets .team .icon i {
   color: var(--green-color);
 }
-.team .progress span {
+.targets .team .progress span {
   background-color: var(--green-color);
 }
-.team .details .progress > span span::after {
+.targets .team .details .progress > span span::after {
   border-top-color: var(--green-color);
 }
 /* ===== TICKETS WIDGET ===== */
@@ -795,11 +795,6 @@ ul {
   padding: 10px 0 0;
 }
 @media (max-width: 767px) {
-  .profile-page .info-box .box > div,
-  .profile-page .info-box .box .toggle-switch {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .profile-page .info-box .box > div span {
     display: block;
   }
@@ -810,14 +805,14 @@ ul {
 .profile-page .toggle-switch {
   height: 20px;
 }
-.toggle-switch::before {
+.profile-page .toggle-switch::before {
   width: 12px;
   height: 12px;
   font-size: 8px;
   top: 4px;
   left: 4px;
 }
-.toggle-checkbox:checked + .toggle-switch::before {
+.profile-page .toggle-checkbox:checked + .toggle-switch::before {
   left: 62px;
 }
 /* ===== OTHER DATA ===== */
